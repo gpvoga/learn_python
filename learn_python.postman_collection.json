@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "edd24f9f-4635-426b-b1e5-b6bdb225d6a4",
+		"name": "learn_python",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "flask",
+			"item": [
+				{
+					"name": "hello_world",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}:{{porta}}/helloworld",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{porta}}",
+							"path": [
+								"helloworld"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "roteamento_url",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}:{{porta}}/roteamento_url/brasil?categoria=esporte&quantidade=12",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{porta}}",
+							"path": [
+								"roteamento_url",
+								"brasil"
+							],
+							"query": [
+								{
+									"key": "categoria",
+									"value": "esporte"
+								},
+								{
+									"key": "quantidade",
+									"value": "12"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "L3_roteamento_url",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}:{{porta}}/roteamento_url/brasil?categoria=esporte&quantidade=12",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{porta}}",
+							"path": [
+								"roteamento_url",
+								"brasil"
+							],
+							"query": [
+								{
+									"key": "categoria",
+									"value": "esporte"
+								},
+								{
+									"key": "quantidade",
+									"value": "12"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "6a98dcbc-2fb9-48f1-8c25-4c57c5689437",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "552f9047-12c5-4493-95bf-159fe63579d9",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "cd1f633f-5aae-49c1-aabe-4862d5fee6b9",
+			"key": "url",
+			"value": "localhost"
+		},
+		{
+			"id": "e28a1740-71c4-4fc0-a8b6-1cf6e3645b62",
+			"key": "porta",
+			"value": "8080"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
