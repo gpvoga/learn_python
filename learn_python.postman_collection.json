@@ -83,6 +83,35 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "L4_view_response",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}:{{porta}}/roteamento_url/brasil?categoria=esporte&quantidade=12",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{porta}}",
+							"path": [
+								"roteamento_url",
+								"brasil"
+							],
+							"query": [
+								{
+									"key": "categoria",
+									"value": "esporte"
+								},
+								{
+									"key": "quantidade",
+									"value": "12"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"protocolProfileBehavior": {}
@@ -112,12 +141,12 @@
 	],
 	"variable": [
 		{
-			"id": "cd1f633f-5aae-49c1-aabe-4862d5fee6b9",
+			"id": "e51c591d-5b5b-4a32-acde-5028d26fe18a",
 			"key": "url",
 			"value": "localhost"
 		},
 		{
-			"id": "e28a1740-71c4-4fc0-a8b6-1cf6e3645b62",
+			"id": "5014e2a0-b872-431e-9dc4-279f7deab0ca",
 			"key": "porta",
 			"value": "8080"
 		}
